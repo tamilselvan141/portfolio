@@ -1,0 +1,68 @@
+.about-hero {
+  background: var(--panel-pink);
+  border: 2px solid var(--white);
+  border-radius: var(--radius-md);
+  max-width: 850px;
+  margin: 40px auto 0;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin: 0 0 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.about-hero p + p {
+  margin-top: 16px;
+}
+
+.about-moments {
+  margin: 64px 0 40px;
+  text-align: center;
+}
+
+.about-moments h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 32px;
+}
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.moment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.moment img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--white);
+}
+
+.moment span {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
